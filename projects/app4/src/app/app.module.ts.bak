@@ -7,9 +7,9 @@ import { NavComponent } from './nav/nav.component';
 import { View2Component } from './view2/view2.component';
 import { CommonModule } from '@angular/common';
 
-alert(3);
 @NgModule({
   declarations: [
+  	BrowserModule,
     AppComponent,
     View1Component,
     NavComponent,
@@ -21,6 +21,6 @@ alert(3);
   ],
   bootstrap: [AppComponent]
 })
-export class App3SharedModule {
+export class App4SharedModule {
 }
 
