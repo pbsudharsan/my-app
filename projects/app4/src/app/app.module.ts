@@ -7,29 +7,29 @@ import { NavComponent } from './nav/nav.component';
 import { View2Component } from './view2/view2.component';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
+import { App4SharedModule } from './app-shared.module';
 
 
-
-@NgModule({
-  declarations: [
-    AppComponent,
-    View1Component,
-    NavComponent,
-    View2Component
-  ],
-  imports: [
-     CommonModule,
-    AppRoutingModule
-  ],
-  bootstrap: [AppComponent]
+// @NgModule({
+//   declarations: [
+//     AppComponent,
+//     View1Component,
+//     NavComponent,
+//     View2Component
+//   ],
+//   imports: [
+//      CommonModule,
+//     AppRoutingModule
+//   ],
+//   bootstrap: [AppComponent]
   
-})
-export class  App4SharedModule{
-}
+// })
+// export class  App4SharedModule{
+// }
 
 
 
-alert('test');
+
 
 @NgModule({
   declarations: [

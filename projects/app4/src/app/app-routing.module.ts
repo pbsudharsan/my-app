@@ -7,6 +7,7 @@ import { View2Component } from './view2/view2.component';
 const routes: Routes = [{ path: 'one', component: View1Component },
 { path: 'two', component: View2Component },
 { path: '', redirectTo: 'two', pathMatch: 'full' }];
+alert('routing');
 
 @NgModule({
   // forChild doesn't create the routing service, need to add forRoot in main app module to do: 

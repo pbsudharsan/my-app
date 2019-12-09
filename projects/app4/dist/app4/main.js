@@ -45,7 +45,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var routes = [{ path: 'one', component: _view1_view1_component__WEBPACK_IMPORTED_MODULE_3__["View1Component"] },
     { path: 'two', component: _view2_view2_component__WEBPACK_IMPORTED_MODULE_4__["View2Component"] },
-    { path: '', redirectTo: 'one', pathMatch: 'full' }];
+    { path: '', redirectTo: 'two', pathMatch: 'full' }];
+alert('routing');
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
@@ -58,6 +59,56 @@ var AppRoutingModule = /** @class */ (function () {
         })
     ], AppRoutingModule);
     return AppRoutingModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/app-shared.module.ts":
+/*!**************************************!*\
+  !*** ./src/app/app-shared.module.ts ***!
+  \**************************************/
+/*! exports provided: App4SharedModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "App4SharedModule", function() { return App4SharedModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _view1_view1_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./view1/view1.component */ "./src/app/view1/view1.component.ts");
+/* harmony import */ var _nav_nav_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./nav/nav.component */ "./src/app/nav/nav.component.ts");
+/* harmony import */ var _view2_view2_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./view2/view2.component */ "./src/app/view2/view2.component.ts");
+
+
+
+
+
+
+
+alert('test');
+var App4SharedModule = /** @class */ (function () {
+    function App4SharedModule() {
+    }
+    App4SharedModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            declarations: [
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+                _view1_view1_component__WEBPACK_IMPORTED_MODULE_4__["View1Component"],
+                _nav_nav_component__WEBPACK_IMPORTED_MODULE_5__["NavComponent"],
+                _view2_view2_component__WEBPACK_IMPORTED_MODULE_6__["View2Component"]
+            ],
+            imports: [
+                //CommonModule,
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"]
+            ],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
+        })
+    ], App4SharedModule);
+    return App4SharedModule;
 }());
 
 
@@ -122,23 +173,19 @@ var AppComponent = /** @class */ (function () {
 /*!*******************************!*\
   !*** ./src/app/app.module.ts ***!
   \*******************************/
-/*! exports provided: App4SharedModule, App4CoreModule */
+/*! exports provided: App4CoreModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "App4SharedModule", function() { return App4SharedModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "App4CoreModule", function() { return App4CoreModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _view1_view1_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./view1/view1.component */ "./src/app/view1/view1.component.ts");
-/* harmony import */ var _nav_nav_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./nav/nav.component */ "./src/app/nav/nav.component.ts");
-/* harmony import */ var _view2_view2_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./view2/view2.component */ "./src/app/view2/view2.component.ts");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _app_shared_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app-shared.module */ "./src/app/app-shared.module.ts");
 
 
 
@@ -146,48 +193,36 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-var App4SharedModule = /** @class */ (function () {
-    function App4SharedModule() {
-    }
-    App4SharedModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-            declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                _view1_view1_component__WEBPACK_IMPORTED_MODULE_5__["View1Component"],
-                _nav_nav_component__WEBPACK_IMPORTED_MODULE_6__["NavComponent"],
-                _view2_view2_component__WEBPACK_IMPORTED_MODULE_7__["View2Component"]
-            ],
-            imports: [
-                _angular_common__WEBPACK_IMPORTED_MODULE_8__["CommonModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]
-            ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
-        })
-    ], App4SharedModule);
-    return App4SharedModule;
-}());
-
-alert('test');
+// @NgModule({
+//   declarations: [
+//     AppComponent,
+//     View1Component,
+//     NavComponent,
+//     View2Component
+//   ],
+//   imports: [
+//      CommonModule,
+//     AppRoutingModule
+//   ],
+//   bootstrap: [AppComponent]
+// })
+// export class  App4SharedModule{
+// }
 var App4CoreModule = /** @class */ (function () {
     function App4CoreModule() {
     }
     App4CoreModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-            declarations: [
-            // BrowserModule
-            ],
+            declarations: [],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-                _angular_common__WEBPACK_IMPORTED_MODULE_8__["CommonModule"],
-                App4SharedModule,
+                _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"],
+                _app_shared_module__WEBPACK_IMPORTED_MODULE_6__["App4SharedModule"],
                 // Necessary to create the routing service and forChild doesn't create it 
                 // https://stackoverflow.com/questions/46108581/no-provider-for-childrenoutletcontexts-injectionerror
-                _angular_router__WEBPACK_IMPORTED_MODULE_9__["RouterModule"].forRoot([])
+                _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forRoot([])
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], App4CoreModule);
     return App4CoreModule;
